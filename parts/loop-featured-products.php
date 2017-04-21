@@ -3,7 +3,7 @@
 
   	    // Define the query
   	    $args = array(
-  	        'post_type' => 'productos',
+  	        'post_type' => 'product',
   	      	'posts_per_page' => '6',
   	      	'meta_key'   => 'featured-home',
 			'meta_value' => 1,
