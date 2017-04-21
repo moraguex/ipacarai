@@ -805,7 +805,7 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 
 		padding-bottom: em(248px, $fsz);
 
-		background: $black url('images/about-bg.jpg') left bottom no-repeat;
+		background: $black url('../images/about-bg.jpg') left bottom no-repeat;
 		background-size: 100% 40%;
 
 		.container {
@@ -823,13 +823,13 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 				position: absolute;
 				right: 0; top: 121%;
 
-				background: url('images/heart.png') 0 0 no-repeat;
+				background: url('../images/heart.png') 0 0 no-repeat;
 			}
 		}
 	}
 
 	.contact-section {
-		background: $gray url('images/contact-bg.jpg') left bottom no-repeat;
+		background: $gray url('../images/contact-bg.jpg') left bottom no-repeat;
 		background-size: 100% 65%;
 	}
 
