@@ -1,0 +1,19 @@
+@mixin center($max) {
+  max-width: em($max, $body-font-size);
+  width: 100%;
+  margin: 0 auto;
+}
+
+/**
+ * Rem font-size
+ */
+
+@mixin font-size($sizeValue: 16, $important: 0) {
+	@if ($important == 0) {
+		font-size: strip-unit($sizeValue) + px;
+  		font-size: rem($sizeValue);
+	} @else {
+		font-size: strip-unit($sizeValue) + px !important;
+  		font-size: rem($sizeValue) !important;
+	}
+}
