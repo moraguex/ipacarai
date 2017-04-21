@@ -48,7 +48,7 @@
 	  
 	  	<?php $image = get_field('banner-product-image'); ?>
 
-		<img src="<?php echo $image['url']; ?>" class="img-responsive featured-product" alt="<?php echo $image['alt']; ?>" />
+		<img src="<?php echo $image['url']; ?>" class="img-responsive featured-product-image" alt="<?php echo $image['alt']; ?>" />
 	  
 		<div class="product-info">
 			<h3><?php the_title(); ?></h3>  
