@@ -391,7 +391,11 @@ a {
 	}
 
 	.pyme {
-		width: 50%;
+		width: 25%;
+
+		@media (min-width: 520px) {
+			width: 14%;
+		}
 	}
 }
 
@@ -845,10 +849,10 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 		$fsz: $body-font-size;
 	}
 
-	.main-footer-content {
+	.main-footer-top {
 
 		.pyme {
-			width: 38%;
+			width: 30%;
 		}
 	}
 
@@ -902,10 +906,10 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 
 	}
 
-	.main-footer-content {
+	.main-footer-top {
 
 		.pyme {
-			width: 30%;
+			width: 25%;
 		}
 	}
 
@@ -955,7 +959,7 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 }
 
 @media (min-width: 1200px) {
-	.main-footer-content {
+	.main-footer-top {
 
 		.pyme {
 			width: 24%;
