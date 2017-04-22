@@ -15,7 +15,7 @@ get_header();
 				<div class="col-xs-12 col-md-9">
 					
 					<div class="featured-banners-container">
-						<?php get_template_part( 'parts/content', 'featured-products-banner' ); ?>
+						<?php get_template_part( 'parts/content', 'featured-product-banner' ); ?>
 					</div>
 					<div class="catalog-container">
 				        <?php get_template_part( 'parts/content', 'products-listing' ); ?>

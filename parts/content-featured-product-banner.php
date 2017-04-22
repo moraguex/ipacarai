@@ -2,9 +2,9 @@
 
     // Define the query
     $args = array(
-        'post_type' => 'productos',
+        'post_type' => 'product',
       	'meta_key'   => 'featured-catalog',
-	'meta_value' => 1,
+		'meta_value' => 1
     );
 
     $query = new WP_Query( $args );
@@ -19,20 +19,15 @@
 	$categories = '';
 
 	foreach($category_detail as $cd){
-		if (in_array($cd->cat_name, $array)) {
+		if (in_array($cd->slug, $array)) {
 			continue;
 		}
 
-		array_push($array, $cd->cat_name);
+		array_push($array, $cd->slug);
 
-		$categories .= ' '.$cd->cat_name;
+		$categories .= ' '.$cd->slug;
 		
 	}
-
-
-
-	$categories = strtolower($categories);
-
 
 
 	if ($count === 0) {
