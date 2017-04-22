@@ -70,36 +70,39 @@ jQuery(document).ready(function($) {
       }
   });
 
-  var $products = $('.products-listing').isotope({
-    // options
-    itemSelector: '.product-listing',
-    layoutMode: 'masonry'
-  });
+  $(window).on('load', function(){
 
-  var $banners = $('.featured-banners-container').isotope({
-    // options
-    itemSelector: '.featured-product-banner',
-    layoutMode: 'vertical',
-    filter: '.first'
-  });
+    var $products = $('.products-listing').isotope({
+      // options
+      itemSelector: '.product-listing',
+      layoutMode: 'masonry'
+    });
 
-  $('.product-categories').on( 'click', 'a', function(e) {
-    e.preventDefault();
+    var $banners = $('.featured-banners-container').isotope({
+      // options
+      itemSelector: '.featured-product-banner',
+      layoutMode: 'vertical',
+      filter: '.first'
+    });
 
-    $('.product-categories .active').removeClass('active');
+    $('.product-categories').on( 'click', 'a', function(e) {
+      e.preventDefault();
 
-    var $that = $(this),
-    filterValue = $that.attr('data-filter');
+      $('.product-categories .active').removeClass('active');
 
-    $that.addClass('active');
+      var $that = $(this),
+      filterValue = $that.attr('data-filter');
 
-    $products.isotope({ filter: filterValue });
+      $that.addClass('active');
 
-    if (filterValue == '*') {
-      $banners.isotope({ filter: '.first' });
-    } else {
-      $banners.isotope({ filter: filterValue });
-    }
+      $products.isotope({ filter: filterValue });
+
+      if (filterValue == '*') {
+        $banners.isotope({ filter: '.first' });
+      } else {
+        $banners.isotope({ filter: filterValue });
+      }
+    });
   });
 
 });
