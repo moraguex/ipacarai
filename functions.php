@@ -17,9 +17,6 @@ require_once(get_template_directory().'/assets/functions/sidebar.php');
 // Adds support for multiple languages
 require_once(get_template_directory().'/assets/translation/translation.php'); 
 
-// Related post function - no need to rely on plugins
-require_once(get_template_directory().'/assets/functions/related-posts.php'); 
-
 // Customize the WordPress login menu
 require_once(get_template_directory().'/assets/functions/login.php'); 
 

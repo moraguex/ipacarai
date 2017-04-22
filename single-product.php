@@ -33,12 +33,9 @@ get_header(); ?>
 		          </div>
 		        </section>
 
-		        <aside class="related-products">
-		        	<div class="container">
-		        		<?php ipacarai_related_posts(); ?>
-					</div>
-		          
-		        </aside>
+		        
+		       	<?php get_template_part( 'parts/content', 'related-products' ); ?>
+					
 		    </article>
 
 		    <?php endwhile; // End of the loop.
