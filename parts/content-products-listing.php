@@ -3,7 +3,7 @@
 
     // Define the query
     $args = array(
-        'post_type' => 'productos'
+        'post_type' => 'product'
 
     );
 
@@ -16,10 +16,9 @@
     $categories = '';
 	
 	foreach($category_detail as $cd){
-		$categories .= ' '.$cd->cat_name;
+		$categories .= ' '.$cd->slug;
 	}
 
-	$categories = strtolower($categories);
 ?>
     <li class="product-listing col-xs-6 col-md-4<?php echo $categories; ?>" id="post-<?php the_ID(); ?>">
 		

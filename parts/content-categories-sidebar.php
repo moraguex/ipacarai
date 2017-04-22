@@ -7,7 +7,7 @@
 			foreach ($categories as $cat) {
 				echo '<li>'; 
 				?>
-				<a data-filter=".<?=strtolower($cat->name);?>"><?=$cat->name;?></a>
+				<a data-filter=".<?=$cat->slug;?>"><?=$cat->name;?></a>
 				<?php
 				echo '</li>';
 			}
