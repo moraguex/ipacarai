@@ -17,12 +17,6 @@ require_once(get_template_directory().'/assets/functions/sidebar.php');
 // Adds support for multiple languages
 require_once(get_template_directory().'/assets/translation/translation.php'); 
 
-// Customize the WordPress login menu
-require_once(get_template_directory().'/assets/functions/login.php'); 
-
-
-// Adds site styles to the WordPress editor
-//require_once(get_template_directory().'/assets/functions/editor-styles.php'); 
 
 
 
