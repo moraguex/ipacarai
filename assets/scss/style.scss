@@ -604,11 +604,12 @@ a {
 		font-weight: 500;
 		color: $color;
 		text-align: center;
-		line-height: em(42px, $fsz);
+		line-height: em(20px, $fsz);
 
 		background-color: $bg;
 
 		margin: 0;
+		padding: em(12px, $fsz) em(6px, $fsz);
 	}
 }
 
