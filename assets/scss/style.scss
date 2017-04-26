@@ -774,7 +774,11 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 				padding-top: em(6px, $fsz);
 				padding-bottom: em(6px, $fsz);
 				border-left: em(2px, $fsz) solid $dark-red;
-
+				
+				&:hover {
+					background-color: transparent;
+					color: $dark-red;
+				}
 			}
 
 			&:first-child, &:last-child {
