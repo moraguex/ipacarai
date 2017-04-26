@@ -14,8 +14,6 @@ require_once(get_template_directory().'/assets/functions/menu.php');
 // Register sidebars/widget areas
 require_once(get_template_directory().'/assets/functions/sidebar.php'); 
 
-// Adds support for multiple languages
-require_once(get_template_directory().'/assets/translation/translation.php'); 
 
 
 
