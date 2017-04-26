@@ -103,6 +103,12 @@ jQuery(document).ready(function($) {
         $banners.isotope({ filter: filterValue });
       }
     });
+
+    var $featured_products = $('.featured-product-listing').isotope({
+      // options
+      itemSelector: '.featured-listing',
+      layoutMode: 'masonry'
+    });
   });
 
 });

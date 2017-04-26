@@ -1,4 +1,4 @@
-<ul class="row listing">
+<ul class="row listing featured-product-listing">
     <?php
 
   	    // Define the query
