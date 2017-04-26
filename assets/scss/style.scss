@@ -105,6 +105,13 @@ a {
 
 .main-nav {
 	& > li {
+		&.active {
+			a {
+				background-color: $dark-red;
+				color: $white;
+			}
+		}
+
 		& > a {
 			$fsz: 18px;
 
@@ -113,7 +120,7 @@ a {
 			line-height: 1;
 			color: $black;
 
-			&:hover {
+			&:hover, &:focus {
 				background-color: $dark-red;
 				color: $white;
 			}
@@ -767,6 +774,13 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 
 	.main-nav {
 		& > li {
+
+			&.active {
+				a {
+					color: $dark-red;
+					background-color: transparent;
+				}
+			}
 		
 			& > a {
 				$fsz: 18px;
@@ -775,7 +789,7 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 				padding-bottom: em(6px, $fsz);
 				border-left: em(2px, $fsz) solid $dark-red;
 				
-				&:hover {
+				&:hover, &:focus {
 					background-color: transparent;
 					color: $dark-red;
 				}
