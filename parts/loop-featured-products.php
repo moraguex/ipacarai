@@ -20,10 +20,15 @@
 		<div class="featured-product">
 			<a href="<?php the_permalink(); ?>">
 				<h3><?php the_title(); ?></h3>
-				<?php if (has_post_thumbnail()): ?>
-				    
-			    <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
-				    
+				<?php 
+					$image = get_field('complementary-image');
+
+					if( !empty($image) ): 
+				?>
+
+
+				<img src="<?php echo $image['url']; ?>" class="img-responsive" alt="<?php echo $image['alt']; ?>" />
+
 				<?php endif; ?>
 			</a>
 		  	
