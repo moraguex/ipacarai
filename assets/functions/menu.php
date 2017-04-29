@@ -34,7 +34,7 @@ function ipacarai_footer_links() {
 
 // Add active class to menu
 function required_active_nav_class( $classes, $item ) {
-    if ( $item->current == 1 || $item->current_item_ancestor == true ) {
+    if ( ( !is_home() || !is_front_page() ) && ( $item->current == 1 || $item->current_item_ancestor == true ) ) {
         $classes[] = 'active';
     }
     return $classes;

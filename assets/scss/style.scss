@@ -13,6 +13,8 @@ body {
 	font: rem($fsz)/em(24px, $fsz) $main-font-family;
 	color: $black;
 	background-color: $gray;
+
+	position: relative;
 }
 
 h2 {
@@ -120,7 +122,11 @@ a {
 			line-height: 1;
 			color: $black;
 
-			&:hover, &:focus {
+			&:focus {
+				background-color: transparent;
+			}
+
+			&:hover {
 				background-color: $dark-red;
 				color: $white;
 			}
@@ -816,7 +822,7 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 				padding-bottom: em(6px, $fsz);
 				border-left: em(2px, $fsz) solid $dark-red;
 				
-				&:hover, &:focus {
+				&:hover {
 					background-color: transparent;
 					color: $dark-red;
 				}

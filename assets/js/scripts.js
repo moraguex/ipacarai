@@ -111,4 +111,6 @@ jQuery(document).ready(function($) {
     });
   });
 
+  $('body').scrollspy({ target: '#ipacarai-navbar-collapse', offset: 100 });
+
 });
