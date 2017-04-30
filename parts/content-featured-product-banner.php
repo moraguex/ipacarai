@@ -2,7 +2,7 @@
 
     // Define the query
     $args = array(
-        'post_type' => 'product',
+        'post_type' => 'producto',
       	'meta_key'   => 'featured-catalog',
 		'meta_value' => 1
     );

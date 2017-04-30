@@ -1,11 +1,4 @@
-<?php
-/**
- *
- * Template Name: Product
- *
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 
 
 	<div id="primary" class="content-area content content-product">

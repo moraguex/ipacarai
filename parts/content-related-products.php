@@ -8,7 +8,7 @@
 	}
 
 	$args = array(
-		'post_type' => 'product',
+		'post_type' => 'producto',
         'category_name' => $categories,
         'posts_per_page' => 4,
         'post__not_in' => array($post->ID)
@@ -23,7 +23,7 @@
 
 <aside class="related-products">
 	<div class="container">
-		<h2><?php echo __('Related products', 'ipacaraiwp') ?></h2>
+		<h2><?php echo __('Productos relacionados', 'ipacaraiwp') ?></h2>
 		<ul class="row products-listing">
 		<?php while ( $query->have_posts() ) : $query->the_post();?>
 

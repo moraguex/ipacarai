@@ -3,7 +3,7 @@
 
     // Define the query
     $args = array(
-        'post_type' => 'product'
+        'post_type' => 'producto'
 
     );
 

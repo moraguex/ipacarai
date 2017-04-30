@@ -17,10 +17,10 @@ get_header(); ?>
 								<h1 class="page-title">404</h1>
 							</header><!-- .page-header -->
 							<div class="page-content">
-								<h2><?php _e( 'Page not found', 'ipacaraiwp' ); ?></h2>
-								<p><?php _e( 'We are sorry! The page you are looking for might have been removed or had its name changed.', 'ipacaraiwp' ); ?></p>
+								<h2><?php _e( 'P&aacute;gina no encontrada', 'ipacaraiwp' ); ?></h2>
+								<p><?php _e( 'Lo sentimos! La p&aacute;gina solicita puede haber sido eliminada o cambio de nombre.', 'ipacaraiwp' ); ?></p>
 
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn btn-lg btn-secondary"><?php _e( 'Return to Homepage', 'ipacaraiwp' ); ?></a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn btn-lg btn-secondary"><?php _e( 'Regresar al inicio', 'ipacaraiwp' ); ?></a>
 
 							</div><!-- .page-content -->
 						</div>

@@ -1,9 +1,4 @@
-<?php
-/*
-Template Name: Catalog
-*/
-get_header();
-?>
+<?php get_header(); ?>
 
 <div id="primary" class="content-area content">
 	<main id="main" class="site-main" role="main">
