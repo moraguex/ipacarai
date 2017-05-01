@@ -34,9 +34,24 @@ function ipacarai_footer_links() {
 
 // Add active class to menu
 function required_active_nav_class( $classes, $item ) {
-    if ( ( !is_home() || !is_front_page() ) && ( $item->current == 1 || $item->current_item_ancestor == true ) ) {
+    if ( ( !is_front_page() ) && ( $item->current == 1 || $item->current_item_ancestor == true ) ) {
         $classes[] = 'active';
     }
     return $classes;
 }
 add_filter( 'nav_menu_css_class', 'required_active_nav_class', 10, 2 );
+
+
+function add_home_link( $atts, $item, $args ) {
+    
+    if ( !is_front_page() ) {
+        if ( strpos( $atts['href'], '#' ) !== false ) {
+            $atts['href'] = '/' . $atts['href'];
+        }
+    }
+
+    return $atts;
+}
+
+add_filter( 'nav_menu_link_attributes', 'add_home_link', 10, 3 );
+
