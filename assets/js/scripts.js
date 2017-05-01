@@ -1,21 +1,5 @@
 jQuery(document).ready(function($) {
 
-  var $hash = $(location).attr('hash');
-
-  if ( $hash.indexOf("#") >= 0 ) {
-    var $target = $($hash),
-      $offset = 260;
-
-      if ($(window).width() < 768) {
-        $offset = 0;
-      }
-
-      var targetOffset = $target.offset().top - $offset;
-  
-      $('html,body').animate({scrollTop: targetOffset}, 1500);
-      
-  }
-
   // Smooth scroll
   $('a[href*="#"]:not(#to-top)').click(function() {
 
@@ -70,7 +54,7 @@ jQuery(document).ready(function($) {
       }
   });
 
-  $(window).on('load', function(){
+  $(window).on('load', function() {
 
     var $products = $('.products-listing').isotope({
       // options
@@ -109,6 +93,25 @@ jQuery(document).ready(function($) {
       itemSelector: '.featured-listing',
       layoutMode: 'masonry'
     });
+
+
+    var $hash = $(location).attr('hash');
+
+    if ( $hash.indexOf("#") >= 0 ) {
+      var $target = $($hash),
+        $offset = 80;
+
+        console.log($target.offset());
+
+        if ($(window).width() < 768) {
+          $offset = 0;
+        }
+
+        var targetOffset = $target.offset().top - $offset;
+    
+        $('html,body').animate({scrollTop: targetOffset}, 1500);
+        
+    }
   });
 
   $('body').scrollspy({ target: '#ipacarai-navbar-collapse', offset: 100 });
