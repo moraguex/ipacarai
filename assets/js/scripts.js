@@ -101,8 +101,6 @@ jQuery(document).ready(function($) {
       var $target = $($hash),
         $offset = 80;
 
-        console.log($target.offset());
-
         if ($(window).width() < 768) {
           $offset = 0;
         }
