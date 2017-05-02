@@ -266,8 +266,10 @@ a {
 	}
 
 	input {
-		line-height: 2.35;
-		height: auto;
+		$fsz: 18px;
+
+		line-height: em(20px, $fsz);
+		height: em(52px, $fsz);
 	}
 	
 	.form-group {
