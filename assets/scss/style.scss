@@ -664,9 +664,9 @@ a {
 
 	.product-image {
 		position: absolute;
-		right: 2%;
-	    top: 44%;
-	    height: 75%;
+		right: -5%;
+	    top: 50%;
+	    height: 60%;
 	}
 
 	
@@ -727,47 +727,6 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 	overflow: hidden;
 }
 
-@media (min-width: 568px) {
-	.main-footer-content {
-		$fsz: $body-font-size;
-
-		padding: em(30px, $fsz);
-
-		img {
-			margin: auto;
-		}
-
-		.pyme-logo {
-			width: 30%;
-		}
-	}
-
-	.featured-product-banner {
-		$fsz: $body-font-size;
-
-		margin-bottom: em(72px, $fsz);
-
-		h3 {
-			$fsz: 36px;
-
-			@include font-size($fsz);
-		}
-
-		.featured-product-image {
-			right: 5%;
-		    top: 62%;
-		    height: 52%;
-		}
-
-		.btn {
-			min-width: em(180px, 18px);
-		}
-	}
-
-	
-}
-
-
 
 .error-404 {
 	$fsz: $body-font-size;
@@ -809,6 +768,59 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 		}
 		
 	}
+}
+
+
+@media (min-width: 568px) {
+	.main-footer-content {
+		$fsz: $body-font-size;
+
+		padding: em(30px, $fsz);
+
+		img {
+			margin: auto;
+		}
+
+		.pyme-logo {
+			width: 30%;
+		}
+	}
+
+	.featured-product-banner {
+		$fsz: $body-font-size;
+
+		margin-bottom: em(72px, $fsz);
+
+		h3 {
+			$fsz: 36px;
+
+			@include font-size($fsz);
+		}
+
+		.featured-product-image {
+			right: 5%;
+		    top: 62%;
+		    height: 52%;
+		}
+
+		.btn {
+			min-width: em(180px, 18px);
+		}
+	}
+
+	.product-images {
+		$fsz: $body-font-size;
+
+		.product-image {
+			right: -4%;
+		    top: 54%;
+		    height: 50%;
+		}
+
+		
+	}
+
+	
 }
 
 
@@ -961,6 +973,18 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 		max-width: 50%;
 	}
 
+	.product-images {
+		$fsz: $body-font-size;
+
+		.product-image {
+			right: -6%;
+		    top: 60%;
+		    height: 45%;
+		}
+
+		
+	}
+
 	.error-404 {
 		$fsz: $body-font-size;
 
@@ -1085,10 +1109,6 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 
 	.product-images {
 		max-width: 94%;
-
-		.product-image {
-			right: -6%;
-		}
 	}
 }
 
