@@ -8,13 +8,20 @@
 					<?php get_template_part( 'parts/content', 'categories-sidebar' ); ?>
 				</div>
 				<div class="col-xs-12 col-md-9">
-					
+
 					<div class="featured-banners-container">
 						<?php get_template_part( 'parts/content', 'featured-product-banner' ); ?>
 					</div>
+
+					<div class="button-group sort-by-button-group">
+						<strong>Organizar por:</strong>
+						<button class="btn btn-primary is-checked" data-sort-value="name">Nombre</button>
+						<button class="btn btn-primary" data-sort-value="category">Categor&iacute;a</button>
+					</div>
+
 					<div class="catalog-container">
-				        <?php get_template_part( 'parts/content', 'products-listing' ); ?>
-			  		</div>
+				    <?php get_template_part( 'parts/content', 'products-listing' ); ?>
+			  	</div>
 				</div>
 			</div>
 		</div>

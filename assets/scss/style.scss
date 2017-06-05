@@ -41,10 +41,28 @@ a {
 	}
 }
 
+.sort-by-button-group {
+	text-align: right;
+	margin: em(16px, $body-font-size) 0 em(12px, $body-font-size);
+}
+
 .btn {
 	border: 0 none;
 
 	border-radius: 2px;
+}
+
+.btn-primary {
+	$color: $black;
+	$bg: $white;
+
+	color: $color;
+	background-color: $bg;
+
+	&:hover, &.is-checked {
+		color: $bg;
+		background-color: $dark-red;
+	}
 }
 
 .btn-secondary {
@@ -64,7 +82,7 @@ a {
 	$fsz: 18px;
 
 	@include font-size($fsz);
-	
+
 	padding: 0 em(12px, $fsz);
 	min-width: em(180px, $fsz);
 
@@ -102,7 +120,7 @@ a {
 
     background: $adarga-logo;
 
-    
+
 }
 
 .main-nav {
@@ -145,7 +163,7 @@ a {
 				}
 			}
 		}
-	} 
+	}
 }
 
 .listing {
@@ -235,7 +253,7 @@ a {
 		padding: em(4px, $fsz) em(6px, $fsz);
 		background-color: $bg;
 		border: em(4px, $fsz) solid $bg;
-		
+
 		line-height: em(18px, $fsz);
 		color: $color;
 	}
@@ -251,12 +269,12 @@ a {
 	p {
 		color: $white;
 	}
-	
+
 }
 
 .contact-section {
 	$fsz: $body-font-size;
-	
+
 	padding: em(52px, $fsz) 0;
 
 	label, input, textarea {
@@ -271,7 +289,7 @@ a {
 		line-height: em(20px, $fsz);
 		height: em(52px, $fsz);
 	}
-	
+
 	.form-group {
 		margin-bottom: em(32px, $fsz);
 
@@ -296,7 +314,7 @@ a {
 	}
 
 	.wpcf7-mail-sent-ok {
-		@extend .alert-success; 
+		@extend .alert-success;
 	}
 
 	.wpcf7-not-valid-tip {
@@ -305,7 +323,7 @@ a {
 		color: $red;
 	}
 
-	
+
 }
 
 
@@ -364,7 +382,7 @@ a {
 		position: absolute;
 		top: em(2px, $fsz); right: 103%;
 		width: 1em;
-		
+
 		text-align: center;
 		color: $black;
 		line-height: 1;
@@ -382,14 +400,14 @@ a {
 }
 
 .form-control::-webkit-input-placeholder {
-	color: $black;	
+	color: $black;
 }
 
 .main-footer {
 	background-color: $black;
 
 	text-align: center;
-	
+
 	p, a {
 		color: $white;
 	}
@@ -423,13 +441,13 @@ a {
 	.ipacarai-logo {
 		background: $ipacarai-logo;
 
-		
+
 	}
 
 	.escud-logo {
 		background: $escud-logo;
 
-		
+
 	}
 
 	.pyme-logo {
@@ -444,7 +462,7 @@ a {
 
 .footer-links {
 	$fsz: $body-font-size;
- 	
+
 	padding: 0;
 	margin: 0;
 	margin-top: em(24px, $fsz);
@@ -479,7 +497,7 @@ a {
 
 	.copyright {
 		$fsz: 12px;
-		
+
 		@include font-size($fsz);
 
 		text-transform: uppercase;
@@ -669,7 +687,7 @@ a {
 	    height: 60%;
 	}
 
-	
+
 }
 
 .product-description {
@@ -700,7 +718,7 @@ a {
 .related-products {
 	background-color: $dark-gray;
 	padding-bottom: 0;
-	
+
 	ul {
 		padding: 0;
 
@@ -761,12 +779,12 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 		.btn-lg {
 			$fsz: 18px;
 
-			padding: em(12px, $fsz) em(20px, $fsz);	
+			padding: em(12px, $fsz) em(20px, $fsz);
 			margin-top: em(24px, $fsz);
 
 			text-transform: uppercase;
 		}
-		
+
 	}
 }
 
@@ -817,10 +835,10 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 		    height: 50%;
 		}
 
-		
+
 	}
 
-	
+
 }
 
 
@@ -872,14 +890,14 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 					background-color: transparent;
 				}
 			}
-		
+
 			& > a {
 				$fsz: 18px;
 
 				padding-top: em(6px, $fsz);
 				padding-bottom: em(6px, $fsz);
 				border-left: em(2px, $fsz) solid $dark-red;
-				
+
 				&:hover {
 					background-color: transparent;
 					color: $dark-red;
@@ -905,7 +923,7 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 
 					border: 1px solid $black;
 					padding: 0;
-					width: 30px; 
+					width: 30px;
 				}
 			}
 
@@ -928,10 +946,10 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 
 		.container {
 			position: relative;
-			
+
 			&:after {
 				$fsz: $body-font-size;
-	
+
 				@include font-size($fsz);
 
 				content: '';
@@ -982,7 +1000,7 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 		    height: 45%;
 		}
 
-		
+
 	}
 
 	.error-404 {
@@ -1016,23 +1034,23 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 			.btn-lg {
 				$fsz: 18px;
 
-				padding: em(12px, $fsz) em(20px, $fsz);	
+				padding: em(12px, $fsz) em(20px, $fsz);
 				margin-top: em(24px, $fsz);
 
 				text-transform: uppercase;
 			}
-			
+
 		}
 	}
 
 }
 
 
-@media (min-width: 992px) {	
+@media (min-width: 992px) {
 
 	.about-section {
 		.container {
-			
+
 			&:after {
 				top: 126%;
 			}
@@ -1059,7 +1077,7 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 
 		position: absolute;
 		right: -21%; top: 20%;
-		
+
 		max-width: em(320px, $fsz);
 
 	}
@@ -1101,7 +1119,7 @@ div#n2-ss-2 div.n2-ss-slide, div#n2-ss-2 div.n2-ss-canvas, div#n2-ss-2 div.n2-ss
 				}
 
 				& > a {
-					
+
 				}
 			}
 		}

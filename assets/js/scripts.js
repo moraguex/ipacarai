@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
       && location.hostname == this.hostname) {
           var $target = $(this.hash);
-          
+
           $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
           if ($target.length) {
               $offset = 80;
@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
               }
 
               var targetOffset = $target.offset().top - $offset;
-              
+
               $('html,body').animate({scrollTop: targetOffset}, 1500);
               return false;
           }
@@ -45,8 +45,8 @@ jQuery(document).ready(function($) {
   // Sticky nav
   $(window).scroll(function() {
       var stickyHeader = $('.ipacarai-navbar'),
-      offset  = $(window).scrollTop(); 
-      
+      offset  = $(window).scrollTop();
+
       if( offset > 0 ) {
           stickyHeader.addClass('sticky');
       } else {
@@ -59,7 +59,27 @@ jQuery(document).ready(function($) {
     var $products = $('.products-listing').isotope({
       // options
       itemSelector: '.product-listing',
-      layoutMode: 'masonry'
+      layoutMode: 'masonry',
+      getSortData: {
+        name: '.product-name',
+        category: '[data-category]',
+      },
+      sortBy: 'name'
+    });
+
+    // bind sort button click
+    $('.sort-by-button-group').on( 'click', 'button', function() {
+      var sortValue = $(this).attr('data-sort-value');
+      $products.isotope({ sortBy: sortValue });
+    });
+
+    // change is-checked class on buttons
+    $('.button-group').each( function( i, buttonGroup ) {
+      var $buttonGroup = $( buttonGroup );
+      $buttonGroup.on( 'click', 'button', function() {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $( this ).addClass('is-checked');
+      });
     });
 
     var $banners = $('.featured-banners-container').isotope({
@@ -106,9 +126,9 @@ jQuery(document).ready(function($) {
         }
 
         var targetOffset = $target.offset().top - $offset;
-    
+
         $('html,body').animate({scrollTop: targetOffset}, 1500);
-        
+
     }
   });
 
