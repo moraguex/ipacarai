@@ -1,3 +1,3 @@
 <div class="map">
-  	<?php echo do_shortcode('[wpgmza id="1"]') ; ?>
+  	<?php echo do_shortcode('[map id="1"]') ; ?>
 </div>
