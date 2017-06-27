@@ -27,7 +27,7 @@
 
 													$variations_array = explode(',', $variations);
 
-													$product_name = get_field('brand') .' '. get_the_title();
+													$product_name = get_the_title();
 
 													foreach ( $variations_array as $i ) {
 														echo '<li>'. $product_name .' de <strong>'. $i .'</strong></li>';
