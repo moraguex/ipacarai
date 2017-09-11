@@ -417,6 +417,8 @@ a {
 .main-footer-top {
 	$fsz: $body-font-size;
 
+	background-color: $dark-gray;
+
 	padding: em(36px, $fsz) 0;
 
 	.footer-logos {
@@ -428,7 +430,7 @@ a {
 		margin: auto;
 	}
 
-	.ipacarai-logo, .escud-logo {
+	.escud-logo {
 		@extend .text-hide;
 
 		display: block;
@@ -439,15 +441,11 @@ a {
 	}
 
 	.ipacarai-logo {
-		background: $ipacarai-logo;
-
 
 	}
 
 	.escud-logo {
 		background: $escud-logo;
-
-
 	}
 
 	.pyme-logo {
@@ -478,7 +476,7 @@ a {
 	}
 
 	a {
-
+		color: $black;
 		font-weight: 500;
 		text-transform: uppercase;
 
